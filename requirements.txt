@@ -1,0 +1,2 @@
+unidecode
+zeroconf>=0.132.2
