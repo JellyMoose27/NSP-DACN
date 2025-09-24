@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+non_stop_parking.access_nsp_vehicle,access_nsp_vehicle,non_stop_parking.model_nsp_vehicle,base.group_user,1,1,1,1
+non_stop_parking.access_nsp_vehicle_logs,access_nsp_vehicle_logs,non_stop_parking.model_nsp_vehicle_logs,base.group_user,1,1,1,1
+non_stop_parking.access_nsp_role,access_nsp_role,non_stop_parking.model_nsp_role,base.group_user,1,1,1,1
+
+non_stop_parking.access_nsp_card,access_nsp_card,non_stop_parking.model_nsp_card,nsp_group_admin,1,1,1,1
+non_stop_parking.access_nsp_card,access_nsp_card,non_stop_parking.model_nsp_card,nsp_group_it,1,1,0,0
+non_stop_parking.access_nsp_card,access_nsp_card,non_stop_parking.model_nsp_card,nsp_group_security,1,1,0,0
+non_stop_parking.access_nsp_card,access_nsp_card,non_stop_parking.model_nsp_card,nsp_group_user,1,0,0,0
+
+non_stop_parking.access_nsp_devices,access_nsp_devices,non_stop_parking.model_nsp_devices,base.group_user,1,0,0,0

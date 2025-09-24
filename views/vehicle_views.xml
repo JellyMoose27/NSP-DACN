@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="nsp_vehicle_action" model="ir.actions.act_window">
+        <field name='name'>Phương tiện</field>
+        <field name="res_model">nsp.vehicle</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="nsp_vehicle_list_view" model="ir.ui.view">
+        <field name='name'>nsp.vechile.list.view</field>
+        <field name="model">nsp.vehicle</field>
+        <field name='arch' type='xml'>
+            <list string='Danh sách phương tiện'>
+                <field name="name"/>
+                <field name='plate_number'/>
+                <field name='brand'/>
+                <field name="color"/>
+                <field name='owner_partner_id'/>
+                <field name='current_status' widget="badge" decoration-success="current_status=='inside'" decoration-info="current_status=='outside'" decoration-warning="current_status=='unknown'"/>
+                <field name="create_date" string="Ngày được tạo"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="nsp_vehicle_form_view" model="ir.ui.view">
+        <field name="name">nsp.vehicle.form.view</field>
+        <field name="model">nsp.vehicle</field>
+        <field name="arch" type="xml">
+            <form string="Phương tiện">
+                <sheet>
+                    <div class="oe_title">
+                        <label for='name'/>
+                        <h1>
+                            <field name="name" placeholder="e.g Honda" required='1'/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name='plate_number' required='1'/>
+                        <field name='owner_partner_id'/>
+                    </group>
+                    <group>
+                        <field name='brand'/>
+                        <field name="color"/>
+                        <field name="create_date" readonly='1'/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

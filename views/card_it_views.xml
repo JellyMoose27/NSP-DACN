@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="nsp_card_it_action" model='ir.actions.act_window'>
+        <field name='name'>Nhập thẻ</field>
+        <field name='res_model'>nsp.card</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="nsp_card_it_list_view" model="ir.ui.view">
+        <field name="name">nsp.card.it.list.view</field>
+        <field name="model">nsp.card</field>
+        <field name="arch" type="xml">
+            <list string="Danh sách thẻ">
+                <field name="card_id"/>
+                <field name="card_type"/>
+            </list>
+        </field>
+    </record>
+</odoo>

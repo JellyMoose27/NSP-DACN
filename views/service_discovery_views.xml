@@ -1,0 +1,33 @@
+<odoo>
+    <record id="nsp_service_discovery_action" model="ir.actions.act_window">
+        <field name="name">Dịch vụ Zeroconf</field>
+        <field name="res_model">nsp.devices</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="nsp_service_discovery_view_list" model="ir.ui.view">
+        <field name="name">nsp.service.discovery.view.list</field>
+        <field name="model">nsp.devices</field>
+        <field name="arch" type="xml">
+            <list string="Danh sách thiết bị và dịch vụ">
+                <field name="name"/>
+                <field name="ip"/>
+                <field name="services"/>
+            </list>       
+        </field>
+    </record>
+
+    <record id="nsp_service_discovery_view_form" model="ir.ui.view">
+        <field name="name">nsp.service.discovery.view.form</field>
+        <field name="model">nsp.devices</field>
+        <field name="arch" type="xml">
+            <form string="Thiết bị và dịch vụ">
+                <sheet>
+                    <field name="name" style="font-size: 1.2rem;"/>
+                    <field name="ip"/>
+                    <field name="services"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
