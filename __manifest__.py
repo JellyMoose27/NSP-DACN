@@ -25,8 +25,5 @@
         'views/service_discovery_views.xml',
         'views/menu_views.xml',
     ],
-    # 'assets': [
-
-    # ],
     'license': 'LGPL-3'
 }

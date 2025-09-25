@@ -10,7 +10,7 @@
     <menuitem id="nsp_vehicle_logs_menu" name="Lịch sử ra vào" parent="nsp_root_menu" action="nsp_vehicle_logs_action" sequence='10'/>
     <menuitem id="nsp_role_menu" name="Quyền truy cập" parent="nsp_root_menu" action="nsp_role_action" sequence='15'/>
     <menuitem id="nsp_group_menu" name="Nhóm truy cập" parent="nsp_root_menu" action="nsp_groups_action" sequence="16"/>
-    <menuitem id="nsp_service_discovery_menu" name="Zeroconf" parent="nsp_root_menu" action="nsp_service_discovery_action" sequence="17"/>
+    <menuitem id="nsp_service_discovery_menu" name="Thiết bị" parent="nsp_root_menu" action="nsp_service_discovery_action" sequence="17"/>
 
     <menuitem id="nsp_card_admin_menu" name="Tạo thẻ" parent="nsp_manage_card_submenu" action="nsp_card_admin_action" sequence="21"/>
     <menuitem id="nsp_card_it_menu" name="Nhập thẻ" parent="nsp_manage_card_submenu" action="nsp_card_it_action" sequence='22'/>
